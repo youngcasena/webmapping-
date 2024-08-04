@@ -32,12 +32,74 @@
 
         // Example data of eating habits
         var eatingHabits = [
-            { location: [ -1.286389, 36.817223 ], city: 'Nairobi', vegetarian: 30, nonVegetarian: 70 },
-            { location: [ -0.091702, 34.767956 ], city: 'Kisumu', vegetarian: 20, nonVegetarian: 80 },
-            { location: [ -0.463500, 39.646011 ], city: 'Mombasa', vegetarian: 25, nonVegetarian: 75 },
-            { location: [ 0.516667, 35.283333 ], city: 'Eldoret', vegetarian: 40, nonVegetarian: 60 },
-            { location: [ 0.456034, 36.960562 ], city: 'Nyeri', vegetarian: 35, nonVegetarian: 65 }
+             { location: [ -1.2921, 36.8219 ], city: 'Nairobi', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ -3.4214, 39.8550 ], city: 'Mombasa', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ -0.0917, 34.7680 ], city: 'Kisumu', vegetarian: 20, nonVegetarian: 80 },
+            { location: [ -0.4267, 37.4540 ], city: 'Machakos', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ -0.2833, 36.0667 ], city: 'Nakuru', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ 0.5167, 35.2833 ], city: 'Eldoret', vegetarian: 40, nonVegetarian: 60 },
+            { location: [ 0.0560, 37.6459 ], city: 'Embu', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ 1.2921, 36.8219 ], city: 'Garissa', vegetarian: 10, nonVegetarian: 90 },
+            { location: [ -0.5153, 35.2698 ], city: 'Bungoma', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ 0.3664, 37.5882 ], city: 'Kitui', vegetarian: 20, nonVegetarian: 80 },
+            { location: [ -0.0854, 35.2863 ], city: 'Baringo', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ -1.1359, 35.8463 ], city: 'Bomet', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ 0.4533, 37.0659 ], city: 'Kirinyaga', vegetarian: 40, nonVegetarian: 60 },
+            { location: [ 0.4167, 37.8333 ], city: 'Meru', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ -1.2123, 36.8993 ], city: 'Kajiado', vegetarian: 20, nonVegetarian: 80 },
+            { location: [ -0.6564, 34.6036 ], city: 'Homa Bay', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ 1.7463, 39.2630 ], city: 'Lamu', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ -0.4579, 37.6309 ], city: 'Laikipia', vegetarian: 20, nonVegetarian: 80 },
+            { location: [ 2.2578, 37.3484 ], city: 'Marsabit', vegetarian: 10, nonVegetarian: 90 },
+            { location: [ 0.4883, 37.6683 ], city: 'Nyeri', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ 0.3054, 37.4588 ], city: 'Nyandarua', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ -1.2053, 36.8726 ], city: 'Makueni', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ -0.5503, 37.6603 ], city: 'Tharaka-Nithi', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ -1.1135, 36.7017 ], city: 'Murang\'a', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ 1.5576, 35.4669 ], city: 'Turkana', vegetarian: 20, nonVegetarian: 80 },
+            { location: [ 0.4454, 35.7380 ], city: 'Trans-Nzoia', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ 0.5694, 34.5584 ], city: 'Siaya', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ 1.2564, 34.8166 ], city: 'Vihiga', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ 0.4165, 35.0085 ], city: 'Nandi', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ 0.7231, 35.3027 ], city: 'Kakamega', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ -0.4553, 36.9606 ], city: 'Nyeri', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ -1.2130, 36.9052 ], city: 'Kiambu', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ 0.5143, 35.2698 ], city: 'Uasin Gishu', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ 1.1418, 35.3001 ], city: 'West Pokot', vegetarian: 20, nonVegetarian: 80 },
+            { location: [ -1.2475, 36.6634 ], city: 'Kajiado', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ 0.4356, 34.6483 ], city: 'Kisii', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ -0.5143, 34.5997 ], city: 'Kisumu', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ 0.5016, 37.4677 ], city: 'Embu', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ 1.5185, 37.2644 ], city: 'Samburu', vegetarian: 20, nonVegetarian: 80 },
+            { location: [ -1.2911, 36.7846 ], city: 'Machakos', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ 2.2871, 37.8142 ], city: 'Isiolo', vegetarian: 30, nonVegetarian: 70 },
+            { location: [ -0.4571, 36.9568 ], city: 'Nyeri', vegetarian: 35, nonVegetarian: 65 },
+            { location: [ 0.5085, 37.4196 ], city: 'Embu', vegetarian: 25, nonVegetarian: 75 },
+            { location: [ -0.4085, 37.7428 ], city: 'Meru', vegetarian: 30, nonVegetarian: 70 }
         ];
+
+        // Add pie chart markers to the map
+        eatingHabits.forEach(function(habit) {
+            var pieChartMarker = new L.PieChartMarker(habit.location, {
+                radius: 50,
+                data: {
+                    'Vegetarian': habit.vegetarian,
+                    'Non-Vegetarian': habit.nonVegetarian
+                },
+                chartOptions: {
+                    'Vegetarian': {
+                        fillColor: '#00ff00', // Green
+                        minValue: 0,
+                        maxValue: 100,
+                       
+
+
+
+
+
+
+
+
 
         // Add pie chart markers to the map
         eatingHabits.forEach(function(habit) {
